@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/eight">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/eight">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/eight"
+            android:src="@drawable/ic_github"
+            android:layout_weight=".3"
+
+             />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight=".7">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Repository Name"
+                android:textSize="20dp"
+                android:id="@+id/repoFullName"
+                android:layout_margin="@dimen/eight"/>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_margin="@dimen/eight">
+
+
+                <ImageView
+                    android:layout_height="20dp"
+                    android:layout_width="20dp"
+                    android:src="@drawable/ic_star"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="0"
+                    android:id="@+id/repoStar"
+                    android:layout_marginLeft="@dimen/eight"
+                    android:layout_weight=".7" />
+
+                <ImageView
+                    android:layout_height="20dp"
+                    android:layout_width="20dp"
+                    android:src="@drawable/ic_fork" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="0"
+                    android:id="@+id/repoFork"
+                    android:layout_marginLeft="@dimen/eight"
+                    android:layout_weight=".7" />
+            </TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="View Repository"
+                android:background="@color/colorAccent"
+                android:textColor="#fff"
+                android:id="@+id/viewRepo"
+                android:layout_gravity="center"
+                android:padding="@dimen/eight"
+                android:layout_margin="@dimen/eight"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </TableRow>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>
